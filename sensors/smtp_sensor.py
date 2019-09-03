@@ -25,7 +25,7 @@ class SMTPSensor(Sensor):
         self._trigger = 'email.smtp.message'
         self._logger = self._sensor_service.get_logger(__name__)
         self._server = None
-        self._listen_ip = self._config.get('sensor_smtp_listen_ip', '172.16.1.233')
+        self._listen_ip = self._config.get('sensor_smtp_listen_ip', 'smtp.gmail.com')
         self._listen_port = self._config.get('sensor_smtp_listen_port', 587)
 
     def setup(self):
