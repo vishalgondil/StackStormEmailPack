@@ -4,7 +4,7 @@ description: "Rule which sends an email when an email from vishal.gondil@gmail.c
 pack: email
 enabled: false
 trigger:
-  type: email.smtp.message
+  type: email.imap.message
   parameters: {}
 criteria:
   trigger.from:
